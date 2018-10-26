@@ -51,18 +51,22 @@ If not then install it
 sudo apt-get python3.6
 ```
 
-You need python installed.
-
 ### Examples
 
 ```
-# Compile GTS_LoadUsers from RTC and write to SolDir folder for zipping
+# Compile GTS_LoadUsers w/ property encryption and the xml file written to
+# the solution folder (in TDISolDir)
 ./cfg -p GTS_LoadUsers -overwrite -c $TDI_SOLDIR/GTS_LoadUsers.xml
+
+
+# Compile GTS_EV and give it ID 'aka_HRSideFeed' (for use with tdisrvctl and
+# api calls)
+./cfg -p GTS_EV -o -name aka_HRSideFeed
 ```
 
-A## Built With
+### Built With
 
-python is fun!
+Python is fun! Almost as much fun as TDI, but not quite :D
 
 ## Authors
 
