@@ -1,0 +1,7 @@
+#!/bin/bash
+
+TITLE="Run the configify Python script with arguments"
+RIGHT_NOW=$(date +"%x %r %Z")
+TIME_STAMP="Learning shell scripting! Woohoo! Run on $RIGHT_NOW by $USER"
+
+python configify.py $@
